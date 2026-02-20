@@ -41,15 +41,21 @@ nav a:hover {
 
 .hero {
   height: 70vh;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('8.jpg') top center / cover no-repeat;
+  background: #000; /* background behind image */
+  background-image: 
+      linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+      url('8.jpg');
+  background-position: center;
+  background-size: contain;  /* 🔥 Shows full image */
+  background-repeat: no-repeat;
+
   display: flex;
   justify-content: center;
   align-items: flex-end;
   text-align: center;
   color: #fff;
-  padding-bottom: 80px;
-}/* 🔥 Hero Section (Fixed) */
+  padding-bottom: 60px;
+}
 
 
 .hero h2 {
