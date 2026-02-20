@@ -13,6 +13,7 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   padding: 20px 40px;
   display: flex;
@@ -38,21 +39,17 @@ nav a:hover {
   color: #e85d75;
 }
 
-/* 🔥 Hero Section */
+/* 🔥 Hero Section (Fixed) */
 .hero {
   height: 70vh;
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url('8.jpg') center/cover no-repeat;
+              url('8.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
-  align-items: flex-end;   /* 🔥 Moves text to bottom */
+  align-items: flex-end;   /* Move text to bottom */
   text-align: center;
   color: #fff;
-  padding-bottom: 30px;    /* 🔥 Space from bottom */
-}
-
-.hero div {
-  padding-top: 180px; /* Adjust this value if you want more down */
+  padding-bottom: 80px;    /* Space from bottom */
 }
 
 .hero h2 {
@@ -64,6 +61,7 @@ nav a:hover {
   font-size: 18px;
 }
 
+/* Cards */
 .cards {
   max-width: 1100px;
   margin: -80px auto 0;
@@ -92,6 +90,7 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+/* Services Section */
 section {
   padding: 80px 40px;
   max-width: 1100px;
@@ -117,12 +116,14 @@ section {
   border-color: #e85d75;
 }
 
+/* Footer */
 footer {
   background: #f8f8f8;
   text-align: center;
   padding: 25px;
 }
 
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .hero h2 { 
     font-size: 34px; 
@@ -142,13 +143,15 @@ footer {
 </nav>
 </header>
 
+<!-- Hero Section -->
 <section class="hero">
-<div>
-  <h2>Enhancing your natural beauty with care & style</h2>
-  <p>Professional bridal makeup & complete beauty services</p>
-</div>
+  <div>
+    <h2>Enhancing your natural beauty with style</h2>
+    <p>Professional bridal makeup & complete beauty services</p>
+  </div>
 </section>
 
+<!-- Cards -->
 <div class="cards">
 
 <a href="bridal.html" style="text-decoration: none; color: inherit;">
@@ -172,6 +175,7 @@ footer {
 
 </div>
 
+<!-- Services -->
 <section id="services">
 <h2>Our Popular Services</h2>
 <div class="services">
@@ -182,6 +186,7 @@ footer {
 </div>
 </section>
 
+<!-- Footer -->
 <footer id="contact">
 <p>📍 Supertech Mart, Supertech Eco Village-2, Noida Extension</p>
 <p>📞 9717236523 | 8383853904</p>
