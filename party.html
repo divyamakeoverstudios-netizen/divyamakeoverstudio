@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Party & Events - Divya Makeover Studio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* Header */
+header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+}
+
+header h1 {
+  color: #FFD700;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #e85d75;
+}
+
+/* Hero Section */
+.hero {
+  height: 70vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('party-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 44px;
+  letter-spacing: 1px;
+}
+
+/* Services Section */
+.content {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: #FFD700;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.service-box {
+  background: #ffffff;
+  color: #e85d75;
+  padding: 30px;
+  border-radius: 18px;
+  font-weight: 600;
+  transition: 0.4s;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(232,93,117,0.4);
+}
+
+/* Footer */
+footer {
+  background: #ffffff;
+  color: #000;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-address {
+  font-weight: bold;
+  font-size: 22px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Divya Makeover Studio</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="index.html#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+  <h2>Party & Event Makeup Services</h2>
+</section>
+
+<section class="content">
+  <h3 class="section-title">Our Party Packages</h3>
+
+  <div class="services">
+    <div class="service-box">Party Makeup</div>
+    <div class="service-box">Engagement Makeup</div>
+    <div class="service-box">Reception Makeup</div>
+    <div class="service-box">Festival Glam Look</div>
+  </div>
+</section>
+
+<footer id="contact">
+  <p class="footer-address">
+    📍 Supertech Mart, Supertech Eco Village-2, Noida Extension
+  </p>
+  <p>📞 9717236523 | 8383853904</p>
+  <p>🕙 10:00 AM – 9:00 PM</p>
+  <p>© 2026 Divya Makeover Studio</p>
+</footer>
+
+</body>
+</html>
