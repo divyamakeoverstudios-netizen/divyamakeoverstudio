@@ -1,189 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DIVYA MAKEOVER STUDIO Beauty Studio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DIVYA MAKEOVER STUDIO Beauty Studio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: #ffffff;
-      color: #333;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #ffffff;
+  color: #333;
+}
 
-    header {
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #fff;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
+header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
 
-    header h1 {
-      color: #e85d75;
-      margin: 0;
-    }
+header h1 {
+  color: #e85d75;
+  margin: 0;
+}
 
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
 
-    nav a:hover {
-      color: #e85d75;
-    }
+nav a:hover {
+  color: #e85d75;
+}
 
-    .hero {
-      margin-top: 25px; /* 🔥 Space added here */
-      height: 70vh;
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url('8.jpg') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-    }
+/* 🔥 Hero Section */
+.hero {
+  height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('8.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
 
-    .hero h2 {
-      font-size: 46px;
-      margin-bottom: 10px;
-    }
+.hero div {
+  padding-top: 120px; /* Adjust this value if you want more down */
+}
 
-    .hero p {
-      font-size: 18px;
-    }
+.hero h2 {
+  font-size: 46px;
+  margin-bottom: 10px;
+}
 
-    .cards {
-      max-width: 1100px;
-      margin: -80px auto 0;
-      padding: 0 30px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
+.hero p {
+  font-size: 18px;
+}
 
-    .card {
-      background: #fff;
-      padding: 30px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-      transition: 0.3s ease;
-    }
+.cards {
+  max-width: 1100px;
+  margin: -80px auto 0;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-    }
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
 
-    .card h3 {
-      color: #e85d75;
-      margin-bottom: 10px;
-    }
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
 
-    section {
-      padding: 80px 40px;
-      max-width: 1100px;
-      margin: auto;
-    }
+.card h3 {
+  color: #e85d75;
+  margin-bottom: 10px;
+}
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-    }
+section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
 
-    .service-box {
-      border: 1px solid #eee;
-      padding: 25px;
-      border-radius: 16px;
-      text-align: center;
-      transition: 0.3s;
-    }
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
 
-    .service-box:hover {
-      background: #fff5f8;
-      border-color: #e85d75;
-    }
+.service-box {
+  border: 1px solid #eee;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s;
+}
 
-    footer {
-      background: #f8f8f8;
-      text-align: center;
-      padding: 25px;
-    }
+.service-box:hover {
+  background: #fff5f8;
+  border-color: #e85d75;
+}
 
-    @media (max-width: 768px) {
-      .hero h2 { 
-        font-size: 34px; 
-      }
-    }
-  </style>
+footer {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  .hero h2 { 
+    font-size: 34px; 
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Divya Makeover Studio</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<h1>Divya Makeover Studio</h1>
+<nav>
+  <a href="#">Home</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
 </header>
 
 <section class="hero">
-  <div>
-    <h2>Enhancing your natural beauty with care & style</h2>
-    <p>Professional bridal makeup & complete beauty services</p>
-  </div>
+<div>
+  <h2>Enhancing your natural beauty with care & style</h2>
+  <p>Professional bridal makeup & complete beauty services</p>
+</div>
 </section>
 
-<!-- 3 Cards below Hero -->
 <div class="cards">
 
-  <a href="bridal.html" style="text-decoration: none; color: inherit;">
-    <div class="card">
-      <h3>Bridal Makeup</h3>
-      <p>HD, Airbrush & traditional bridal looks for your big day.</p>
-    </div>
-  </a>
-
-  <a href="salon.html" style="text-decoration: none; color: inherit;">
-    <div class="card"> 
-      <h3>Salon Services</h3>
-      <p>Facials, cleanup, waxing, threading & skincare.</p>
-    </div>
-  </a>
-
+<a href="bridal.html" style="text-decoration: none; color: inherit;">
   <div class="card">
-    <h3>Party & Events</h3>
-    <p>Party, engagement & reception makeup.</p>
+    <h3>Bridal Makeup</h3>
+    <p>HD, Airbrush & traditional bridal looks for your big day.</p>
   </div>
+</a>
+
+<a href="salon.html" style="text-decoration: none; color: inherit;">
+  <div class="card"> 
+    <h3>Salon Services</h3>
+    <p>Facials, cleanup, waxing, threading & skincare.</p>
+  </div>
+</a>
+
+<div class="card">
+  <h3>Party & Events</h3>
+  <p>Party, engagement & reception makeup.</p>
+</div>
 
 </div>
 
 <section id="services">
-  <h2>Our Popular Services</h2>
-  <div class="services">
-    <div class="service-box">HD Makeup</div>
-    <div class="service-box">Hair Styling</div>
-    <div class="service-box">Facials & Skincare</div>
-    <div class="service-box">Manicure & Pedicure</div>
-  </div>
+<h2>Our Popular Services</h2>
+<div class="services">
+  <div class="service-box">HD Makeup</div>
+  <div class="service-box">Hair Styling</div>
+  <div class="service-box">Facials & Skincare</div>
+  <div class="service-box">Manicure & Pedicure</div>
+</div>
 </section>
 
 <footer id="contact">
-  <p>📍 Supertech Mart, Supertech Eco Village-2, Noida Extension</p>
-  <p>📞 9717236523 | 8383853904</p>
-  <p>🕙 10:00 AM – 9:00 PM</p>
-  <p>💬 WhatsApp: 9717236523</p>
-  <p>© 2026 Divya Makeover Studio</p>
+<p>📍 Supertech Mart, Supertech Eco Village-2, Noida Extension</p>
+<p>📞 9717236523 | 8383853904</p>
+<p>🕙 10:00 AM – 9:00 PM</p>
+<p>💬 WhatsApp: 9717236523</p>
+<p>© 2026 Divya Makeover Studio</p>
 </footer>
 
 </body>
