@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salon Services | Divya Makeover Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 40px;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #e85d75;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #e85d75;
+    }
+
+    /* HERO */
+    .hero {
+      height: 60vh;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      url('salon-hero.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+    }
+
+    section {
+      padding: 70px 40px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h3 {
+      color: #e85d75;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .service-box {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 30px;
+      background: #e85d75;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #f3f3f3;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 30px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Divya Makeover Studio</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="bridal.html">Bridal</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Professional Salon Services</h2>
+</section>
+
+<section>
+  <h3>Beauty & Skincare Treatments</h3>
+
+  <p>
+    At Divya Makeover Studio, we provide complete salon services 
+    designed to refresh, rejuvenate and enhance your natural glow.
+    Our experienced professionals use high-quality products 
+    to ensure safe and satisfying results.
+  </p>
+
+  <div class="services">
+    <div class="service-box">
+      <h4>Facials</h4>
+      <p>Deep cleansing, glow & anti-aging facials for healthy skin.</p>
+    </div>
+
+    <div class="service-box">
+      <h4>Cleanup</h4>
+      <p>Quick skin refresh treatment for instant brightness.</p>
+    </div>
+
+    <div class="service-box">
+      <h4>Waxing</h4>
+      <p>Hygienic and smooth waxing services for all skin types.</p>
+    </div>
+
+    <div class="service-box">
+      <h4>Threading</h4>
+      <p>Perfect eyebrow shaping and facial hair removal.</p>
+    </div>
+  </div>
+
+  <a href="https://wa.me/919717236523" class="btn">Book Appointment on WhatsApp</a>
+</section>
+
+<footer id="contact">
+  <p>📍 Supertech Mart, Supertech Eco Village-2, Noida Extension</p>
+  <p>📞 9717236523 | 8383853904</p>
+  <p>🕙 10:00 AM – 9:00 PM</p>
+  <p>© 2026 Divya Makeover Studio</p>
+</footer>
+
+</body>
+</html>
