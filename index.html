@@ -47,7 +47,7 @@ nav a:hover {
 .hero {
   height: 100vh;
   background-image: 
-      linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
       url('81.jpg');
   background-position: center;
   background-size: cover;
@@ -61,20 +61,14 @@ nav a:hover {
   padding: 0 20px;
 }
 
-.hero h2 {
-  font-size: 46px;
-  margin-bottom: 20px;
-  background: linear-gradient(45deg, #FFD700, #ffcc00, #e6b800);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 15px rgba(0,0,0,0.6);
+.hero-content {
+  max-width: 800px;
 }
 
-/* Book Appointment Button */
+/* Button */
 .book-btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px 32px;
+  padding: 16px 38px;
   background: #FFD700;
   color: #000;
   font-weight: 700;
@@ -86,8 +80,18 @@ nav a:hover {
 
 .book-btn:hover {
   background: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(255,215,0,0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(255,215,0,0.6);
+}
+
+/* Heading Below Button */
+.hero h2 {
+  font-size: 46px;
+  margin-top: 30px;
+  background: linear-gradient(45deg, #FFD700, #ffcc00, #e6b800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 15px rgba(0,0,0,0.6);
 }
 
 /* Cards */
@@ -135,7 +139,7 @@ section {
 section h2 {
   text-align: center;
   margin-bottom: 40px;
-  color: #e85d75;
+  color: #FFD700;
 }
 
 .services {
@@ -146,7 +150,7 @@ section h2 {
 
 .service-box {
   background: #fff;
-  color: #e85d75;
+  color: #000;
   padding: 25px;
   border-radius: 16px;
   text-align: center;
@@ -155,7 +159,7 @@ section h2 {
 }
 
 .service-box:hover {
-  background: #ffe6ec;
+  background: #ffe680;
 }
 
 /* Footer */
@@ -172,14 +176,14 @@ footer p {
 
 footer p:first-child {
   font-weight: bold;
-  font-size: 20px;
-  color: #fff;
+  font-size: 18px;
+  color: #FFD700;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .hero h2 { 
-    font-size: 30px; 
+    font-size: 28px; 
   }
 
   header {
@@ -196,9 +200,9 @@ footer p:first-child {
 <body>
 
 <header>
-<h1>Divya Makeover Studio</h1>
+<h1>DIVYA MAKEOVER STUDIO</h1>
 <nav>
-  <a href="index.html">Home</a>
+  <a href="#">Home</a>
   <a href="#services">Services</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -206,37 +210,38 @@ footer p:first-child {
 
 <!-- Hero Section -->
 <section class="hero">
-  <div>
-    <h2>Professional Bridal Makeup & Complete Beauty Services</h2>
+  <div class="hero-content">
+
+    <!-- Button First -->
     <a href="https://wa.me/919717236523" target="_blank" class="book-btn">
       📲 Book Appointment
     </a>
+
+    <!-- Text Below Button -->
+    <h2>
+      Professional Bridal Makeup & Complete Beauty Services
+    </h2>
+
   </div>
 </section>
 
 <!-- Cards Section -->
 <div class="cards">
 
-<a href="bridal.html" style="text-decoration: none; color: inherit;">
   <div class="card">
     <h3>Bridal Makeup</h3>
     <p>HD, Airbrush & Traditional bridal looks for your big day.</p>
   </div>
-</a>
 
-<a href="salon.html" style="text-decoration: none; color: inherit;">
   <div class="card"> 
     <h3>Salon Services</h3>
     <p>Facials, cleanup, waxing, threading & skincare.</p>
   </div>
-</a>
 
-<a href="party.html" style="text-decoration: none; color: inherit;">
   <div class="card">
     <h3>Party & Events</h3>
     <p>Party, engagement & reception makeup.</p>
   </div>
-</a>
 
 </div>
 
@@ -253,10 +258,10 @@ footer p:first-child {
 
 <!-- Footer -->
 <footer id="contact">
-<p>📍 UGS-20, First Floor, Supertech Mart, Supertech Eco Village-2, Noida Extension</p>
+<p>📍 UGS-20, First Floor, Supertech Mart, 
+  Supertech Eco Village-2, Noida Extension</p>
 <p>📞 9717236523 | 8383853904</p>
 <p>🕙 10:00 AM – 9:00 PM</p>
-<p>💬 WhatsApp: 9717236523</p>
 <p>© 2026 Divya Makeover Studio</p>
 </footer>
 
