@@ -43,60 +43,22 @@ nav a:hover {
   color: #FFD700;
 }
 
-/* Hero Section */
+/* Hero Section (Now Only Background Image) */
 .hero {
-  height: 100vh;
+  height: 70vh;
   background-image: 
-      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
       url('11.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  padding: 0 20px;
-}
-
-.hero-content {
-  max-width: 800px;
-}
-
-/* Button */
-.book-btn {
-  display: inline-block;
-  padding: 16px 38px;
-  background: #FFD700;
-  color: #000;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: 0.3s ease;
-  box-shadow: 0 8px 20px rgba(255,215,0,0.4);
-}
-
-.book-btn:hover {
-  background: #fff;
-  transform: translateY(-4px);
-  box-shadow: 0 15px 30px rgba(255,215,0,0.6);
-}
-
-/* Heading Below Button - NOW WHITE */
-.hero h2 {
-  font-size: 46px;
-  margin-top: 30px;
-  color: #ffffff;   /* White color */
-  text-shadow: 2px 2px 15px rgba(0,0,0,0.6);
 }
 
 /* Cards */
 .cards {
   max-width: 1100px;
-  margin: -60px auto 0;
-  padding: 0 30px 60px;
+  margin: -60px auto 60px;
+  padding: 0 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
@@ -124,6 +86,38 @@ nav a:hover {
 
 .card p {
   color: #444;
+}
+
+/* Appointment Section (NEW SECTION ABOVE SERVICES) */
+.appointment-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.book-btn {
+  display: inline-block;
+  padding: 16px 38px;
+  background: #FFD700;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255,215,0,0.4);
+}
+
+.book-btn:hover {
+  background: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(255,215,0,0.6);
+}
+
+.appointment-section h2 {
+  font-size: 36px;
+  margin-top: 25px;
+  color: #FFD700;
 }
 
 /* Services Section */
@@ -180,16 +174,16 @@ footer p:first-child {
 
 /* Mobile */
 @media (max-width: 768px) {
-  .hero h2 { 
-    font-size: 28px; 
-  }
-
   header {
     flex-direction: column;
   }
 
   header h1 {
     font-size: 26px;
+  }
+
+  .appointment-section h2 {
+    font-size: 24px;
   }
 }
 </style>
@@ -206,17 +200,10 @@ footer p:first-child {
 </nav>
 </header>
 
-<section class="hero">
-  <div class="hero-content">
-    <a href="https://wa.me/919717236523" target="_blank" class="book-btn">
-      📲 Book Appointment
-    </a>
-    <h2>
-      Professional Bridal Makeup & Complete Beauty Services
-    </h2>
-  </div>
-</section>
+<!-- HERO IMAGE -->
+<section class="hero"></section>
 
+<!-- CARDS -->
 <div class="cards">
   <div class="card">
     <h3>Bridal Makeup</h3>
@@ -234,6 +221,18 @@ footer p:first-child {
   </div>
 </div>
 
+<!-- NEW APPOINTMENT SECTION (ABOVE OUR POPULAR SERVICES) -->
+<section class="appointment-section">
+  <a href="https://wa.me/919717236523" target="_blank" class="book-btn">
+    📲 Book Appointment
+  </a>
+
+  <h2>
+    Professional Bridal Makeup & Complete Beauty Services
+  </h2>
+</section>
+
+<!-- SERVICES -->
 <section id="services">
 <h2>Our Popular Services</h2>
 <div class="services">
