@@ -43,12 +43,12 @@ nav a:hover {
   color: #FFD700;
 }
 
-/* Hero Section (Now Only Background Image) */
+/* Hero Section */
 .hero {
   height: 80vh;
-  background-image: url('11.jpg'); /* Only image */
+  background-image: url('11.jpg');
   background-position: center;
-  background-size: cover;   /* Full screen cover */
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -62,6 +62,10 @@ nav a:hover {
   gap: 25px;
 }
 
+.card-link {
+  text-decoration: none;
+}
+
 .card {
   background: #fff;
   padding: 30px;
@@ -70,6 +74,7 @@ nav a:hover {
   box-shadow: 0 15px 35px rgba(0,0,0,0.2);
   transition: 0.3s ease;
   cursor: pointer;
+  color: inherit;
 }
 
 .card:hover {
@@ -86,7 +91,7 @@ nav a:hover {
   color: #444;
 }
 
-/* Appointment Section (NEW SECTION ABOVE SERVICES) */
+/* Appointment Section */
 .appointment-section {
   text-align: center;
   padding: 60px 20px;
@@ -193,6 +198,7 @@ footer p:first-child {
 <h1>DIVYA MAKEOVER STUDIO</h1>
 <nav>
   <a href="#">Home</a>
+  <a href="bridal.html">Bridal</a>
   <a href="#services">Services</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -205,11 +211,12 @@ footer p:first-child {
 <div class="cards">
 
   <!-- Bridal Card Linked -->
-  <a href="bridal.html" class="service-card">
-    <h3>Bridal Makeup</h3>
-    <p>HD, Airbrush & Traditional bridal looks.</p>
+  <a href="bridal.html" class="card-link">
+    <div class="card">
+      <h3>Bridal Makeup</h3>
+      <p>HD, Airbrush & Traditional bridal looks for your big day.</p>
+    </div>
   </a>
-
 
   <div class="card"> 
     <h3>Salon Services</h3>
@@ -223,8 +230,7 @@ footer p:first-child {
 
 </div>
 
-
-<!-- NEW APPOINTMENT SECTION (ABOVE OUR POPULAR SERVICES) -->
+<!-- Appointment Section -->
 <section class="appointment-section">
   <a href="https://wa.me/919717236523" target="_blank" class="book-btn">
     📲 Book Appointment
