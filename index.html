@@ -22,8 +22,10 @@ header {
   background: #000;
 }
 
-header h1 { color: #FFD700;   /* Luxury Gold Yellow */
-  margin: 0;font-size: 42px;
+header h1 { 
+  color: #FFD700;
+  margin: 0;
+  font-size: 42px;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -38,42 +40,61 @@ nav a {
 }
 
 nav a:hover {
-  color: #e85d75;
+  color: #FFD700;
 }
 
 /* Hero Section */
 .hero {
-   height: 100vh;   /* Full screen height */
-  background: #000;
+  height: 100vh;
   background-image: 
       linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
       url('81.jpg');
   background-position: center;
-  background-size: cover;   /* Full screen cover */
+  background-size: cover;
   background-repeat: no-repeat;
 
   display: flex;
   justify-content: center;
-  align-items: center;   /* Center text vertically */
+  align-items: center;
   text-align: center;
   color: #fff;
   padding: 0 20px;
 }
 
 .hero h2 {
-   font-size: 46px;
-  margin-bottom: 40px;
+  font-size: 46px;
+  margin-bottom: 20px;
   background: linear-gradient(45deg, #FFD700, #ffcc00, #e6b800);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 2px 15px rgba(0,0,0,0.6);
 }
 
+/* Book Appointment Button */
+.book-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background: #FFD700;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255,215,0,0.4);
+}
+
+.book-btn:hover {
+  background: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255,215,0,0.6);
+}
+
 /* Cards */
 .cards {
   max-width: 1100px;
   margin: -60px auto 0;
-  padding: 0 30px;
+  padding: 0 30px 60px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
@@ -91,7 +112,7 @@ nav a:hover {
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(232,93,117,0.4);
+  box-shadow: 0 20px 40px rgba(255,215,0,0.4);
 }
 
 .card h3 {
@@ -160,6 +181,14 @@ footer p:first-child {
   .hero h2 { 
     font-size: 30px; 
   }
+
+  header {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
 }
 </style>
 </head>
@@ -179,6 +208,9 @@ footer p:first-child {
 <section class="hero">
   <div>
     <h2>Professional Bridal Makeup & Complete Beauty Services</h2>
+    <a href="https://wa.me/919717236523" target="_blank" class="book-btn">
+      📲 Book Appointment
+    </a>
   </div>
 </section>
 
@@ -221,7 +253,7 @@ footer p:first-child {
 
 <!-- Footer -->
 <footer id="contact">
-<p>📍 UGS-20, First Floor,Supertech Mart, Supertech Eco Village-2, Noida Extension</p>
+<p>📍 UGS-20, First Floor, Supertech Mart, Supertech Eco Village-2, Noida Extension</p>
 <p>📞 9717236523 | 8383853904</p>
 <p>🕙 10:00 AM – 9:00 PM</p>
 <p>💬 WhatsApp: 9717236523</p>
