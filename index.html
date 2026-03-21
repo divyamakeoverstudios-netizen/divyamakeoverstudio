@@ -46,7 +46,8 @@ nav a:hover {
 /* Hero Section */
 .hero {
   height: 80vh;
-  background-image: url('2.jpg');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,7 +69,7 @@ nav a:hover {
 
 .card {
   background: #fff;
-  padding: 30px;
+  padding: 20px;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 15px 35px rgba(0,0,0,0.2);
@@ -80,6 +81,15 @@ nav a:hover {
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(255,215,0,0.4);
+}
+
+/* Card Image */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .card h3 {
@@ -210,17 +220,25 @@ footer p:first-child {
 <!-- CARDS -->
 <div class="cards">
 
+  <!-- Bridal Makeup Card -->
+  <a href="bridal.html" class="card-link">
     <div class="card">
+      <img src="bridal.jpg" alt="Bridal Makeup">
       <h3>Bridal Makeup</h3>
-      <p>HD, Airbrush & Traditional bridal looks for your big day.</p>
+      <p>
+        Get a flawless bridal look with HD, Airbrush & Traditional makeup.
+        We make your big day extra special with professional touch.
+      </p>
     </div>
   </a>
 
+  <!-- Salon Services -->
   <div class="card"> 
     <h3>Salon Services</h3>
     <p>Facials, cleanup, waxing, threading & skincare.</p>
   </div>
 
+  <!-- Party & Events -->
   <div class="card">
     <h3>Party & Events</h3>
     <p>Party, engagement & reception makeup.</p>
