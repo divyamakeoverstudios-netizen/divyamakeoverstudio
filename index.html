@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>DIVYA MAKEOVER STUDIO | Beauty Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bridal Makeup | Divya Makeover Studio</title>
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: #000;
-  color: #333;
+  color: #fff;
 }
 
 /* Header */
@@ -20,16 +20,12 @@ header {
   align-items: center;
   background: #000;
 }
-
 header h1 { 
   color: #FFD700;
   margin: 0;
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
 }
-
 nav a {
   margin-left: 20px;
   text-decoration: none;
@@ -37,226 +33,83 @@ nav a {
   font-weight: 500;
   transition: 0.3s;
 }
+nav a:hover { color: #FFD700; }
 
-nav a:hover {
-  color: #FFD700;
-}
-
-/* Hero Section */
+/* Hero */
 .hero {
-  background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') no-repeat center/cover;
+  background: url('bridal-hero.jpg') no-repeat center/cover;
   height: 60vh;
   min-height: 400px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* Cards */
-.cards {
+/* Content */
+.section {
   max-width: 1100px;
-  margin: -60px auto 60px;
-  padding: 0 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-
-.card-link {
-  text-decoration: none;
-}
-
-.card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 20px;
+  margin: 40px auto;
+  padding: 0 20px;
   text-align: center;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-  transition: 0.3s ease;
-  cursor: pointer;
-  color: inherit;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(255,215,0,0.4);
-}
-
-.card img {
+.section img {
   width: 100%;
-  height: 260px; /* Card image size badi */
+  height: 260px; /* Sabhi images same size */
   object-fit: cover;
   border-radius: 15px;
   margin-bottom: 15px;
 }
 
-.card h3 {
-  color: #e85d75;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #444;
-}
-
-/* Appointment Section */
-.appointment-section {
-  text-align: center;
-  padding: 60px 20px;
-  background: #111;
-  color: #fff;
-}
-
-.book-btn {
-  display: inline-block;
-  padding: 16px 38px;
-  background: #FFD700;
-  color: #000;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: 0.3s ease;
-  box-shadow: 0 8px 20px rgba(255,215,0,0.4);
-}
-
-.book-btn:hover {
-  background: #fff;
-  transform: translateY(-4px);
-  box-shadow: 0 15px 30px rgba(255,215,0,0.6);
-}
-
-.appointment-section h2 {
-  font-size: 36px;
-  margin-top: 25px;
+.section h2 {
   color: #FFD700;
+  margin-bottom: 15px;
+}
+
+.section p {
+  color: #fff;
+  font-size: 16px;
 }
 
 /* Footer */
 footer {
   background: #111;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   color: #fff;
-}
-
-footer p {
-  margin: 8px 0;
-}
-
-footer p:first-child {
-  font-weight: bold;
-  font-size: 18px;
-  color: #FFD700;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-
-  header h1 {
-    font-size: 26px;
-  }
-
-  .appointment-section h2 {
-    font-size: 24px;
-  }
-
-  .card img {
-    height: 200px; /* Mobile pe thoda chhota */
-  }
 }
 </style>
 </head>
-
 <body>
 
 <header>
-  <h1>DIVYA MAKEOVER STUDIO</h1>
-  <nav>
-    <a href="index.html#home">Home</a>
-    <a href="index.html#appointment">Contact</a>
-  </nav>
+<h1>DIVYA MAKEOVER STUDIO</h1>
+<nav>
+  <a href="index.html#home">Home</a>
+  <a href="index.html#appointment">Contact</a>
+</nav>
 </header>
 
-<!-- HERO -->
-<section id="home" class="hero"></section>
+<!-- Hero -->
+<section class="hero"></section>
 
-<!-- Cards -->
-<div class="cards">
-  <a href="bridalmakeup.html" class="card-link">
-    <div class="card">
-      <img src="bridal2.jpg" alt="Bridal Makeup">
-      <h3>Bridal Makeup</h3>
-      <p>Flawless HD, Airbrush & Traditional bridal makeup.</p>
-    </div>
-  </a>
+<!-- Content -->
+<section class="section">
+  <h2>Bridal Makeup Services</h2>
+  <img src="bridal2.jpg" alt="Bridal Makeup">
+  <p>Flawless HD, Airbrush & Traditional bridal makeup.</p>
+</section>
 
-  <a href="salonservices.html" class="card-link">
-    <div class="card">
-      <img src="hair spa1.jpg" alt="Salon Services">
-      <h3>Salon Services</h3>
-      <p>Facials, cleanup, waxing & skincare.</p>
-    </div>
-  </a>
-
-  <a href="party&event.html" class="card-link">
-    <div class="card">
-      <img src="party1.jpg" alt="Party & Events">
-      <h3>Party & Events</h3>
-      <p>Makeup for parties & occasions.</p>
-    </div>
-  </a>
-
-  <a href="hdmakeup.html" class="card-link">
-    <div class="card">
-      <img src="party2.jpg" alt="HD Makeup">
-      <h3>HD Makeup</h3>
-      <p>High-definition flawless makeup.</p>
-    </div>
-  </a>
-
-  <a href="hairstyling.html" class="card-link">
-    <div class="card">
-      <img src="Hairstyle.jpg" alt="Hairstyling">
-      <h3>Hairstyling</h3>
-      <p>Trendy & elegant hairstyles.</p>
-    </div>
-  </a>
-
-  <a href="facialskincare.html" class="card-link">
-    <div class="card">
-      <img src="facial1.jpg" alt="Facial & Skincare">
-      <h3>Facial & Skincare</h3>
-      <p>Glow-enhancing skincare treatments.</p>
-    </div>
-  </a>
-
-  <a href="manicurepedicure.html" class="card-link">
-    <div class="card">
-      <img src="pedicure2.jpg" alt="Manicure & Pedicure">
-      <h3>Manicure & Pedicure</h3>
-      <p>Complete nail care for hands & feet.</p>
-    </div>
-  </a>
-</div>
-
-<!-- Appointment Section -->
-<section id="appointment" class="appointment-section">
-  <a href="https://wa.me/919717236523" target="_blank" class="book-btn">
-    📲 Book Appointment
-  </a>
-  <h2>Professional Bridal Makeup & Complete Beauty Services</h2>
+<section class="section">
+  <h2>Other Services</h2>
+  <img src="party1.jpg" alt="Party & Events">
+  <p>Party & Event makeup services.</p>
 </section>
 
 <!-- Footer -->
 <footer>
-  <p>📍 UGS-20, First Floor, Supertech Mart, Noida Extension</p>
-  <p>📞 9717236523 | 8383853904</p>
-  <p>🕙 10:00 AM – 9:00 PM</p>
-  <p>© 2026 Divya Makeover Studio</p>
+<p>📍 UGS-20, First Floor, Supertech Mart, Noida Extension</p>
+<p>📞 9717236523 | 8383853904</p>
+<p>🕙 10:00 AM – 9:00 PM</p>
+<p>© 2026 Divya Makeover Studio</p>
 </footer>
 
 </body>
