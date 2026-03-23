@@ -36,11 +36,23 @@
       color: #ffd700;
     }
 
-    .hero {
-      background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') no-repeat center/cover;
-      height: 300px;
-    }
+  .hero {
+  background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') no-repeat center/cover;
+  height: 60vh;       /* Screen ke 60% height */
+  min-height: 400px;  /* Choti screens me minimum height */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
+.hero h1 {
+  color: #FFD700;
+  font-size: 48px;
+  text-shadow: 2px 2px 6px #000; /* Text clear dikhe image par */
+  text-align: center;
+}
     .section {
       padding: 25px 15px;
       text-align: center;
