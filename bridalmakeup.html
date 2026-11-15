@@ -54,25 +54,29 @@
 
     /* Hero Section - Three MP4 Videos Side by Side */
 .hero {
-  height: 80vh;
+  display: flex;
   width: 100%;
-  position: relative;
+  height: 500px;
+  gap: 3px;
   overflow: hidden;
   background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3px;
 }
 
-.hero video {
-  width: calc(33.333% - 2px);
+.hero-video {
+  flex: 1;
+  min-width: 0;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
-  display: block;
+  overflow: hidden;
   background: #000;
 }
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 
     /* HERO TITLE AND BUTTON */
 
