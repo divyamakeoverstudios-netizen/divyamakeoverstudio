@@ -1,3 +1,4 @@
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRVPZNPC9J">
 </script>
@@ -50,7 +51,7 @@ nav a {
 
 nav a:hover { color: #FFD700; }
 
-/* Hero Section - MP4 Video */
+/* Hero Section - Three MP4 Videos Side by Side */
 .hero {
   height: 80vh;
   width: 100%;
@@ -60,14 +61,16 @@ nav a:hover { color: #FFD700; }
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 3px;
 }
 
 .hero video {
-  width: 100%;
+  width: calc(33.333% - 2px);
   height: 100%;
   object-fit: contain;
   object-position: center;
   display: block;
+  background: #000;
 }
 
 /* Cards Section */
@@ -191,6 +194,17 @@ footer p:first-child {
   .card img {
     height: 180px;
   }
+
+  .hero {
+    height: 55vh;
+    gap: 2px;
+  }
+
+  .hero video {
+    width: calc(33.333% - 1.5px);
+    height: 100%;
+    object-fit: contain;
+  }
 }
 </style>
 </head>
@@ -205,13 +219,26 @@ footer p:first-child {
 </nav>
 </header>
 
-<!-- Hero Section -->
+<!-- Hero Section - Three Bridal Videos -->
 <section id="home" class="hero">
+
   <video autoplay muted loop playsinline preload="auto">
     <source src="bridal1.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
+
+  <video autoplay muted loop playsinline preload="auto">
+    <source src="bridal2.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <video autoplay muted loop playsinline preload="auto">
+    <source src="bridal3.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
 </section>
+
 <!-- Cards Section -->
 <div class="cards">
   <!-- Row 1 -->
