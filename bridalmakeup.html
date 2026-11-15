@@ -4,15 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bridal Makeup </title>
+
+  <title>Bridal Makeup | Divya Makeover Studio</title>
+
+  <meta name="description" content="Professional Bridal Makeup, HD Makeup, Airbrush Makeup, Engagement and Reception Makeup at Divya Makeover Studio. Book your appointment today.">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #fff5f8, #ffe4ec);
       color: #333;
     }
-    
+
     header {
       background: linear-gradient(45deg, #d81b60, #ad1457);
       color: white;
@@ -44,32 +52,34 @@
       color: #d81b60;
     }
 
-<section class="hero">
+    /* THREE VIDEOS SIDE BY SIDE */
 
-  <!-- Video 1 -->
-  <div class="hero-video">
-    <video autoplay muted loop playsinline preload="auto">
-      <source src="bridal1.mp4" type="video/mp4">
-    </video>
-  </div>
+    .hero {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 75vh;
+      min-height: 350px;
+      overflow: hidden;
+      gap: 3px;
+      background: #000;
+    }
 
-  <!-- Video 2 -->
-  <div class="hero-video">
-    <video autoplay muted loop playsinline preload="auto">
-      <source src="bridal2.mp4" type="video/mp4">
-    </video>
-  </div>
+    .hero-video {
+      width: 33.3333%;
+      height: 100%;
+      overflow: hidden;
+    }
 
-  <!-- Video 3 -->
-  <div class="hero-video">
-    <video autoplay muted loop playsinline preload="auto">
-      <source src="bridal3.mp4" type="video/mp4">
-    </video>
-  </div>
+    .hero-video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-</section>
+    /* HERO TITLE AND BUTTON */
 
-    /* Hero Title and Appointment Button */
     .hero-content {
       position: absolute;
       z-index: 2;
@@ -81,7 +91,6 @@
       color: white;
       background: rgba(0, 0, 0, 0.45);
       padding: 20px 10px;
-      box-sizing: border-box;
       border-radius: 12px;
     }
 
@@ -115,7 +124,7 @@
     }
 
     .section {
-      padding: 15px 15px;
+      padding: 15px;
       text-align: center;
     }
 
@@ -162,15 +171,22 @@
       margin-top: 30px;
     }
 
-    /* Responsive */
+    /* MOBILE RESPONSIVE DESIGN */
+
     @media (max-width: 600px) {
+
+      header h1 {
+        font-size: 27px;
+      }
+
       .hero {
         height: 55vh;
+        min-height: 280px;
         gap: 2px;
       }
 
       .hero-video {
-        width: calc(33.333% - 1.5px);
+        width: 33.3333%;
       }
 
       .hero-content {
@@ -180,6 +196,7 @@
 
       .hero-content h1 {
         font-size: 21px;
+        letter-spacing: 1px;
       }
 
       .hero-content p {
@@ -190,84 +207,162 @@
         padding: 10px 18px;
         font-size: 13px;
       }
+
+      .section h2 {
+        font-size: 30px;
+      }
+
+      .services p {
+        font-size: 19px;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 14px;
+      }
     }
+
   </style>
 </head>
+
 <body>
 
+<!-- HEADER -->
+
 <header>
-  <h1>Bridal Makeup </h1>
+  <h1>Bridal Makeup</h1>
   <p>Your Dream Look for Your Special Day ✨</p>
 </header>
+
+<!-- NAVIGATION -->
 
 <nav>
   <a href="index.html#home">Home</a>
   <a href="index.html#appointment">Contact</a>
 </nav>
 
-<!-- Hero Section - Three Bridal Videos -->
+<!-- THREE BRIDAL VIDEOS SIDE BY SIDE -->
+
 <section class="hero">
 
-  <!-- Left Video -->
+  <!-- LEFT VIDEO -->
+
   <div class="hero-video">
     <video autoplay muted loop playsinline preload="auto">
       <source src="bridal1.mp4" type="video/mp4">
     </video>
   </div>
 
-  <!-- Center Video -->
+  <!-- CENTER VIDEO -->
+
   <div class="hero-video">
     <video autoplay muted loop playsinline preload="auto">
       <source src="bridal2.mp4" type="video/mp4">
     </video>
   </div>
 
-  <!-- Right Video -->
+  <!-- RIGHT VIDEO -->
+
   <div class="hero-video">
     <video autoplay muted loop playsinline preload="auto">
       <source src="bridal3.mp4" type="video/mp4">
     </video>
   </div>
 
-  <!-- Existing Hero Title and Content -->
+  <!-- HERO CONTENT -->
+
   <div class="hero-content">
+
     <h1>DIVYA MAKEOVER STUDIO</h1>
-    <p>Professional Bridal Makeup &amp; Complete Beauty Services</p>
-    <a href="https://wa.me/919717236523" class="book-btn">
+
+    <p>
+      Professional Bridal Makeup &amp;
+      Complete Beauty Services
+    </p>
+
+    <a href="https://wa.me/919717236523"
+       class="book-btn"
+       target="_blank">
       Book Appointment
     </a>
+
   </div>
 
 </section>
 
+<!-- LUXURY BRIDAL MAKEUP -->
+
 <section class="section">
+
   <h2>Luxury Bridal Makeup</h2>
+
   <p>Elegant • Flawless • HD Finish</p>
+
 </section>
+
+<!-- BRIDAL SERVICES -->
 
 <section id="services" class="section services">
-  <h2>Our Bridal Services</h2>
-  <p><span class="highlight">HD Bridal Makeup:</span> Long-lasting, camera-ready flawless finish.</p>
-  <p><span class="highlight">Airbrush Makeup:</span> Lightweight and perfect smooth skin effect.</p>
-  <p><span class="highlight">Engagement Makeup:</span> Soft glam look for your special moments.</p>
-  <p><span class="highlight">Reception Makeup:</span> Bold and elegant evening look.</p>
-  <p><span class="highlight">Trial Makeup:</span> Try your perfect bridal look before the big day.</p>
 
- <div class="cta">
-  <a href="https://wa.me/919717236523" target="_blank">
-    <button>Book Appointment</button>
-  </a>
-</div>
+  <h2>Our Bridal Services</h2>
+
+  <p>
+    <span class="highlight">HD Bridal Makeup:</span>
+    Long-lasting, camera-ready flawless finish.
+  </p>
+
+  <p>
+    <span class="highlight">Airbrush Makeup:</span>
+    Lightweight and perfect smooth skin effect.
+  </p>
+
+  <p>
+    <span class="highlight">Engagement Makeup:</span>
+    Soft glam look for your special moments.
+  </p>
+
+  <p>
+    <span class="highlight">Reception Makeup:</span>
+    Bold and elegant evening look.
+  </p>
+
+  <p>
+    <span class="highlight">Trial Makeup:</span>
+    Try your perfect bridal look before the big day.
+  </p>
+
+  <div class="cta">
+
+    <a href="https://wa.me/919717236523" target="_blank">
+
+      <button>Book Appointment</button>
+
+    </a>
+
+  </div>
+
 </section>
+
+<!-- CONTACT -->
 
 <section id="contact" class="section">
+
   <h2>Contact Us</h2>
+
   <p>Email: divyamakeoverstudios.com</p>
+
   <p>Phone: +91 9717236523</p>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
-  <p>© 2026 Divya Makeover Studio | All Rights Reserved</p>
+
+  <p>
+    © 2026 Divya Makeover Studio | All Rights Reserved
+  </p>
+
 </footer>
 
 </body>
