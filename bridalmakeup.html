@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,18 +44,77 @@
       color: #d81b60;
     }
 
+    /* Three Bridal Videos Side by Side */
     .hero {
-      background: url('bridal22.jpg') no-repeat center/cover;
-      height: 700px; 
-     }
-
-    .hero h2 {
-      font-size: 40px;
-      margin-bottom: 10px;
+      height: 700px;
+      width: 100%;
+      position: relative;
+      display: flex;
+      gap: 3px;
+      overflow: hidden;
+      background: #000;
+      justify-content: center;
+      align-items: center;
     }
 
-    .hero p {
-      font-size: 44px;
+    .hero-video {
+      width: calc(33.333% - 2px);
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .hero-video video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+    }
+
+    /* Hero Title and Appointment Button */
+    .hero-content {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.45);
+      padding: 20px 10px;
+      box-sizing: border-box;
+      border-radius: 12px;
+    }
+
+    .hero-content h1 {
+      font-size: 38px;
+      margin: 0 0 10px;
+      color: #FFD700;
+      letter-spacing: 2px;
+    }
+
+    .hero-content p {
+      font-size: 28px;
+      margin: 10px 0 20px;
+      color: white;
+    }
+
+    .book-btn {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #FFD700;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .book-btn:hover {
+      background: white;
+      transform: translateY(-3px);
     }
 
     .section {
@@ -104,6 +164,36 @@
       padding: 15px;
       margin-top: 30px;
     }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero {
+        height: 55vh;
+        gap: 2px;
+      }
+
+      .hero-video {
+        width: calc(33.333% - 1.5px);
+      }
+
+      .hero-content {
+        width: 94%;
+        padding: 12px 5px;
+      }
+
+      .hero-content h1 {
+        font-size: 21px;
+      }
+
+      .hero-content p {
+        font-size: 15px;
+      }
+
+      .book-btn {
+        padding: 10px 18px;
+        font-size: 13px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -112,22 +202,37 @@
   <h1>Bridal Makeup </h1>
   <p>Your Dream Look for Your Special Day ✨</p>
 </header>
+
 <nav>
   <a href="index.html#home">Home</a>
   <a href="index.html#appointment">Contact</a>
 </nav>
 
-
+<!-- Hero Section - Three Bridal Videos -->
 <section class="hero">
 
-  <!-- Left Vertical Video -->
+  <!-- Left Video -->
   <div class="hero-video">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline preload="auto">
       <source src="bridal1.mp4" type="video/mp4">
     </video>
   </div>
 
-  <!-- Existing Hero Text -->
+  <!-- Center Video -->
+  <div class="hero-video">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="bridal2.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Right Video -->
+  <div class="hero-video">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="bridal3.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Existing Hero Title and Content -->
   <div class="hero-content">
     <h1>DIVYA MAKEOVER STUDIO</h1>
     <p>Professional Bridal Makeup &amp; Complete Beauty Services</p>
@@ -136,14 +241,8 @@
     </a>
   </div>
 
-  <!-- Right Vertical Video -->
-  <div class="hero-video">
-    <video autoplay muted loop playsinline>
-      <source src="bridal2.mp4" type="video/mp4">
-    </video>
-  </div>
-
 </section>
+
 <section class="section">
   <h2>Luxury Bridal Makeup</h2>
   <p>Elegant • Flawless • HD Finish</p>
