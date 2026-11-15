@@ -52,31 +52,27 @@
       color: #d81b60;
     }
 
-    /* THREE VIDEOS SIDE BY SIDE */
+    /* Hero Section - Three MP4 Videos Side by Side */
+.hero {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
 
-    .hero {
-      position: relative;
-      display: flex;
-      width: 100%;
-      height: 75vh;
-      min-height: 350px;
-      overflow: hidden;
-      gap: 3px;
-      background: #000;
-    }
-
-    .hero-video {
-      width: 33.3333%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    .hero-video video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+.hero video {
+  width: calc(33.333% - 2px);
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  background: #000;
+}
 
     /* HERO TITLE AND BUTTON */
 
